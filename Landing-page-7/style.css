@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    padding: 0 40px;
+    height: 89px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.nav > h1{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.nav .leftpart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .leftpart a{
+    text-decoration: none;
+    color: #222;
+    margin: 20px 20px; 
+}
+
+
+.nav .leftpart a:nth-last-child(1){
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav .leftpart a:nth-last-child(1) .green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+}
+
+.nav .leftpart a:nth-last-child(1):hover .green{
+    left: 0;
+}
+
+.nav .leftpart a:nth-last-child(1) h5{
+    font-weight: 500;
+    position: relative;
+    z-index: 99;
+}
+
+#main > h1{
+    font-size: 5.5vw;
+    font-weight: 400;
+    width: 60%;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+#main > h3{
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main > h3 span{
+    border: 1px solid black;
+    padding: 5px 18px;
+    border-radius: 50px;
+    margin: 8px;
+}
+
+#main>h1::after{
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 16px;
+    bottom: -7%;
+    left: 50%;
+    background-image: url(underline-green.svg);
+    transform: translate(-50%, 0%);
+}
+
+#main .img1{
+    height: 400px;
+    width: 260px;
+    position: absolute;
+    left: 3%;
+    top: 20%;
+}
+#main .img2{
+    height: 210px;
+    width: 260px;
+    position: absolute;
+    left: 55%;
+    top: 17%;
+}
+#main .img3{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 77%;
+    top: 60%;
+}
+
+#main img{
+    transition: margin 0.4s ease;
+}
+
+#main>img:hover{
+    margin-top: -20px;
+}
+
+
+.page2{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.page2 h5{
+    font-size: 20px;
+    font-family: "Lora", serif;
+    font-weight: 500;
+}
+
+
+.page2 h1{
+    font-family: "Lora", serif;
+    font-size: 45px;
+    font-weight: 100;
+    text-align: center;
+    width: 70%;
+    margin: 30px 0;
+    position: relative;
+}
+
+.page2 h1::after{
+    content: ""; 
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    position: absolute;
+    height: 79px;
+    width: 211px;
+    right: 40%;
+    bottom: -6%;
+}
+
+.page2 img{
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+}
+
+.page2 .circle{
+    position: relative;
+    bottom: 15%;
+}
+
+.about-us{
+    font-size: 18px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.greendiv{
+    height: 30px;
+    border-radius: 50px;
+    width: 50px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.greendiv img{
+    width: 50px;
+    position: absolute;
+    bottom: 10%;
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 30px;
+    padding: 6px;
+    overflow: hidden;
+}
+/* .greendiv::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+}
+
+.greendiv::before:hover{
+    left: 0%;
+} */
+
+.page3{
+    height: 100vh;
+    width: 100%;
+}
